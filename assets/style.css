@@ -96,6 +96,14 @@ body {
     padding: var(--spacing-md) 0;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .logo h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
