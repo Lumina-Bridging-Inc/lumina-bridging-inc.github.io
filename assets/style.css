@@ -292,6 +292,29 @@ body {
     border-color: var(--primary-color);
 }
 
+.solution-card.flagship {
+    position: relative;
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(0, 102, 255, 0.05) 100%);
+}
+
+.solution-card.flagship:hover {
+    box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2);
+}
+
+.flagship-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0 var(--border-radius) 0 var(--border-radius);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
 .solution-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-md);
