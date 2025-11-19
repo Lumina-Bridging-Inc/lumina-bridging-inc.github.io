@@ -577,6 +577,18 @@ body {
     margin: var(--spacing-sm) 0;
 }
 
+.form-note a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.form-note a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
