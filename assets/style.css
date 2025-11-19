@@ -64,6 +64,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -342,6 +343,7 @@ body {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 .features {
@@ -354,6 +356,7 @@ body {
     color: var(--text-secondary);
     display: flex;
     align-items: center;
+    font-size: 1.05rem;
 }
 
 .features li::before {
@@ -400,6 +403,7 @@ body {
 .feature p {
     color: var(--text-secondary);
     line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 /* ============================================
@@ -455,6 +459,7 @@ body {
     margin-bottom: var(--spacing-md);
     flex-grow: 1;
     line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 .project-tags {
@@ -523,6 +528,7 @@ body {
     color: var(--text-secondary);
     position: relative;
     padding-left: 1.5rem;
+    font-size: 1.05rem;
 }
 
 .tech-item li::before {
@@ -564,6 +570,7 @@ body {
 .contact-info li {
     margin-bottom: var(--spacing-lg);
     line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 .contact-info strong {
@@ -598,6 +605,7 @@ body {
 .form-note p {
     color: var(--text-secondary);
     margin: var(--spacing-sm) 0;
+    font-size: 1.05rem;
 }
 
 .form-note a {
@@ -643,7 +651,7 @@ body {
 
 .footer-section p {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .footer-section ul {
@@ -652,6 +660,7 @@ body {
 
 .footer-section li {
     margin-bottom: var(--spacing-sm);
+    font-size: 1.05rem;
 }
 
 .footer-section a {
