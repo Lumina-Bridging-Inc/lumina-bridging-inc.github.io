@@ -1,0 +1,87 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+.project
+.classpath
+*.c9/
+*.swp
+*.swo
+*~
+.#*
+
+# Build Files
+_site/
+.jekyll-cache/
+.jekyll-metadata
+node_modules/
+dist/
+build/
+
+# Ruby
+.bundle/
+.byebug_history
+.ruby-version
+.ruby-gemset
+*.gem
+Gemfile.lock
+
+# Dependencies
+vendor/
+/.yardoc/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python (if using local server)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Node.js (if using npm/yarn)
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Keep git files
+!.github/
+!.gitignore
+!.gitattributes

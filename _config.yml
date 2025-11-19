@@ -1,0 +1,82 @@
+# Lumina Bridging - Jekyll Configuration
+# Optional: This file helps with GitHub Pages deployment
+
+title: Lumina Bridging
+tagline: Healthcare AI & Automation Solutions
+description: >-
+  Lumina Bridging Inc. empowers healthcare organizations with AI and automation
+  solutions designed to address operational, clinical, and informational challenges
+  in a secure and responsible way.
+
+url: https://lumina-bridging-inc.github.io
+github_username: Lumina-Bridging-Inc
+repository: lumina-bridging-inc.github.io
+
+# Theme (set to null since we're using custom CSS)
+theme: null
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude files/folders from Jekyll processing
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
+  - vendor/
+
+# Include files/folders
+include:
+  - assets/
+
+# Collections (optional, for future use)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Build settings
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+
+# Keep_files
+keep_files:
+  - .git
+  - .gitignore
+  - assets
+
+# SEO
+social:
+  name: Lumina Bridging Inc.
+  links:
+    - https://github.com/Lumina-Bridging-Inc
+
+# Webmaster verification (add your verification codes)
+# google_site_verification: ""
+# bing_webmaster_id: ""
+
+# Analytics (optional - add your ID)
+# google_analytics_id: ""
+
+# Comments (optional)
+comments:
+  provider: false
