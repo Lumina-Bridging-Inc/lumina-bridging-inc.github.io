@@ -1,4 +1,4 @@
-# Lumina Bridging - GitHub Pages Website
+# Lumina Bridging
 
 Professional website for Lumina Bridging Inc., showcasing our healthcare AI and automation solutions.
 
