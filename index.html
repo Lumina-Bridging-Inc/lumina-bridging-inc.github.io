@@ -110,40 +110,6 @@
                         <li>Pharmacy worksheet creation</li>
                     </ul>
                 </div>
-
-                <!-- Solution 3 -->
-                <div class="solution-card">
-                    <div class="solution-icon">📋</div>
-                    <h3>Clinical Protocol Generator</h3>
-                    <p class="solution-type">Pay-as-You-Go</p>
-                    <p>
-                        Automatically generate evidence-based clinical protocols and pre-printed orders grounded in
-                        referenced clinical data. Integrates with major EHR systems to streamline institutional protocol development.
-                    </p>
-                    <ul class="features">
-                        <li>Evidence-based protocol generation</li>
-                        <li>Referenced source materials</li>
-                        <li>EHR system integration</li>
-                        <li>Customizable templates</li>
-                    </ul>
-                </div>
-
-                <!-- Solution 4 -->
-                <div class="solution-card">
-                    <div class="solution-icon">🔬</div>
-                    <h3>Regimen Summary Generator</h3>
-                    <p class="solution-type">Pay-as-You-Go</p>
-                    <p>
-                        Automates the creation and updating of clinical regimen monographs and summaries using referenced
-                        source materials. Ensures standardization and consistency across jurisdictions and care settings.
-                    </p>
-                    <ul class="features">
-                        <li>Automated monograph generation</li>
-                        <li>Multi-jurisdiction standardization</li>
-                        <li>Referenced clinical data</li>
-                        <li>Version control and updates</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -191,37 +157,51 @@
             </p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>AI-Driven Drug Funding Policy Navigator</h3>
-                    <p>An intelligent system that interprets provincial drug funding policies and benefit documentation
-                    to determine eligibility and access pathways. Built with semantic search and LLM integration.</p>
+                    <h3>Chemotherapy Dose Banding Generator</h3>
+                    <p>Generates Cerner-ready standardised dose range tables following NHS England dose banding
+                    methodology, reducing calculation variance and streamlining CPOE order building for oncology pharmacy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Cerner</span>
+                        <span class="tag">CPOE</span>
+                        <span class="tag">Oncology Pharmacy</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Oral Chemotherapy First Fill Tracker</h3>
+                    <p>A Streamlit application for oncology pharmacy staff to identify patients receiving an oral
+                    chemotherapy drug for the first time, replacing a manual, record-by-record dispense history review workflow.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Streamlit</span>
-                        <span class="tag">LLM</span>
-                        <span class="tag">Healthcare</span>
+                        <span class="tag">Oncology Pharmacy</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Clinical Algorithm Implementation</h3>
-                    <p>Evidence-based clinical algorithms implemented as decision support tools. Includes specialized
-                    algorithms for treatment planning and eligibility assessment.</p>
+                    <h3>Oncology Drug Funding MCP Server</h3>
+                    <p>A three-service RAG system integrating provisional funding algorithms, clinical eligibility
+                    rules, and drug formulary data into Claude via the Model Context Protocol for Ontario oncology
+                    drug funding decisions.</p>
                     <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Algorithms</span>
-                        <span class="tag">Clinical</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Vector Database & RAG Systems</h3>
-                    <p>Semantic search and retrieval-augmented generation systems for healthcare data. Powers intelligent
-                    document understanding and policy interpretation across large knowledge bases.</p>
-                    <div class="project-tags">
-                        <span class="tag">ChromaDB</span>
-                        <span class="tag">Embeddings</span>
+                        <span class="tag">MCP</span>
                         <span class="tag">RAG</span>
-                        <span class="tag">Search</span>
+                        <span class="tag">Claude</span>
+                        <span class="tag">Healthcare Policy</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Health Canada Drug Product Database API &amp; MCP Server</h3>
+                    <p>A REST API and companion MCP server exposing Health Canada's Drug Product Database, enriched
+                    with drug shortage data, EMA information, and the Canadian Clinical Drug Data Set for AI assistants
+                    and applications alike.</p>
+                    <div class="project-tags">
+                        <span class="tag">REST API</span>
+                        <span class="tag">MCP</span>
+                        <span class="tag">Health Canada</span>
+                        <span class="tag">Drug Data</span>
                     </div>
                 </div>
             </div>
