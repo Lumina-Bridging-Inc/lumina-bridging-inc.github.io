@@ -366,6 +366,86 @@ body {
     margin-right: var(--spacing-sm);
 }
 
+.example-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.example-thumbnails .example-thumbnail {
+    flex: 1 1 200px;
+    margin-top: 0;
+}
+
+.example-thumbnail {
+    display: block;
+    margin-top: var(--spacing-lg);
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+}
+
+.example-thumbnail:hover,
+.example-thumbnail:focus-visible {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.example-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.example-caption {
+    display: block;
+    padding: 0.5rem var(--spacing-sm);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xl);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
 /* ============================================
    Features Section
    ============================================ */
@@ -476,6 +556,11 @@ body {
     border-radius: 0.375rem;
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+.project-cta {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
 }
 
 .project-link {

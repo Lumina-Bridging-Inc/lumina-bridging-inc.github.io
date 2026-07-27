@@ -67,6 +67,44 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
     }
 });
 
+// Lightbox for example thumbnails
+const lightboxOverlay = document.getElementById('lightbox-overlay');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+function openLightbox(src, alt) {
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || '';
+    lightboxOverlay.classList.add('active');
+}
+
+function closeLightbox() {
+    lightboxOverlay.classList.remove('active');
+    lightboxImage.src = '';
+}
+
+document.querySelectorAll('.example-thumbnail[data-full-src]').forEach(thumb => {
+    const open = () => openLightbox(thumb.dataset.fullSrc, thumb.querySelector('img')?.alt);
+    thumb.addEventListener('click', open);
+    thumb.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            open();
+        }
+    });
+});
+
+if (lightboxOverlay) {
+    lightboxOverlay.addEventListener('click', closeLightbox);
+    lightboxImage.addEventListener('click', e => e.stopPropagation());
+}
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeLightbox);
+}
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
 // Analytics - Simple page tracking
 function trackPageView() {
     if (typeof gtag !== 'undefined') {
